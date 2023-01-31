@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task-2</title>
+	<style>
+		*{
+			color:blue;
+			line-height:30px;
+			font-size:25px;
+			margin:20px 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		//print n num sequence loop
+		var a = 1;
+		while(a<=10){
+			document.write(a);
+			document.write("<br>");
+			a++;
+		}
+		
+		//print n num reverse order
+		for (b=10;b>=1;b--){
+			document.write(b);
+			document.write("<br>");
+		}
+		//print n even numbers loop
+		var a = 1;
+		while(a <= 20){
+			if ((a%2)==0){
+				document.write(a);
+			    document.write("<br>");
+			}
+			a++;
+		}
+		
+		//print n odd numbers loop
+		var a = 1;
+		while(a <= 20){
+			if ((a%2)==1){
+				document.write(a);
+			    document.write("<br>");
+			}
+			a++;
+		}
+		
+		//swap in function
+		function swap(){
+			var a=12;
+			var b=678;
+			var c;
+			c=a;
+			a=b;
+			b=c;
+			document.write(a);
+			document.write("<br>");
+			document.write(b);
+			document.write("<br>");
+		}
+		swap();	
+		//many time output
+		var a =prompt('enter your name');
+		var b =prompt('how many times');
+		for (i = 0; i<=b ; i++){
+			document.write(a);
+			document.write("<br>");
+			}
+		//factorial loop
+		var a=parseInt(prompt("enter the number for factorial"));
+		var d=1;
+		while(a){
+			var d=d*a;
+			--a
+		}
+		document.write(d);
+		document.write("<br>");
+		//-----task-2-----//
+		//pattren-1-----//
+		for (a=1,c=0;a<=5;++a){
+			for(b=a;b<=5;++b){
+				document.write(++c);
+			}
+			c=0
+			document.write("<br>");
+		}
+		//pattren-2-----//
+		for (a=1;a<=5;a++){
+			for(b=1;b<=a;b++){
+				document.write(a);
+			}
+			document.write("<br>");
+		}
+		
+		//pattern-3//
+		for(i=1;i<=5;i++){
+			for(j=1;j<=i;j++){
+				document.write("A");
+				for(j=2;j<=i;j++){
+					document.write("B");
+					for(j=3;j<=i;j++){
+						document.write("C");
+						for(j=4;j<=i;j++){
+							document.write("D");
+							for(j=5;j<=i;j++){
+								document.write("E");
+							}
+						}
+					}
+				}
+			}
+			document.write("<br>");
+		}
+		
+	</script>
+</body>
+</html>
